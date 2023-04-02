@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/voice.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loaderBox1"></div>
+
+    <div class="controller">
+        <div id="stop">
+            <div class="diri">
+                <img src="images/expand_less.svg" alt="" srcset="">
+            </div>
+            <div class="diri">
+                <img src="images/expand_less.svg" alt="" srcset="">
+            </div>
+            <div class="diri">
+                <img src="images/expand_less.svg" alt="" srcset="">
+            </div>
+        </div>  
+
+        <div id="start">
+            <div class="diri">
+                <img src="images/expand_more.svg" alt="" srcset="">
+            </div>
+            <div class="diri">
+                <img src="images/expand_more.svg" alt="" srcset="">
+            </div>
+            <div class="diri">
+                <img src="images/expand_more.svg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <div class="toggle">
+        <div class="indicator"></div>
+        <h5>Start</h5>
+        <h5>Stop</h5>
+    </div>
+
+    <script>
+        let startBtn=document.getElementById('start');
+        let stopBtn=document.getElementById('stop');
+        
+        let toggle = document.getElementsByClassName('toggle')[0];
+        let loaderBox1 = document.getElementsByClassName('loaderBox1')[0];
+
+        startBtn.addEventListener("click",function(){
+            toggle.classList.add('active')
+            loaderBox1.classList.add('active')
+        });
+
+        stopBtn.addEventListener("click",function(){
+            toggle.classList.remove('active')
+            loaderBox1.classList.remove('active')
+        });
+
+    </script>
+
+</body>
+</html>

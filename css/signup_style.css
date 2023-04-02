@@ -4,6 +4,9 @@
   background-color: #dee9f7;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
 }
 
 
@@ -16,7 +19,7 @@
 .form {
   position: relative;
   z-index: 1;
-  background: #48c9b0;
+  background: #c7e1f3;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -40,7 +43,7 @@ border-radius:10px;
 }
 .form button {
   font-family: "Titillium Web", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: .1em;
   outline: 0;
@@ -119,14 +122,4 @@ border-radius:30px;
 }
 .container .info span .fa {
   color: #EF3B3A;
-}
-body {
-  /* background: #76b852; fallback for old browsers */
-  /* background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-  background: -moz-linear-gradient(right, #76b852, #8DC26F);
-  background: -o-linear-gradient(right, #76b852, #8DC26F);
-  background: linear-gradient(to left, #76b852, #8DC26F); */
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;    
 }
